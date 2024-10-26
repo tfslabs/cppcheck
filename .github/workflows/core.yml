@@ -32,6 +32,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           rm cppcheck-2.10.tar.gz
+          rm .github/workflows/*.yml
           git add .
           git commit -m "cppcheck core forking for GitHub Actions, version 2.10"
           git push
